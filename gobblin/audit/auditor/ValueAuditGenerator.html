@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.auditor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.values.auditor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?gobblin/audit/auditor/ValueAuditGenerator.html" target="_top">Frames</a></li>
@@ -92,7 +92,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">gobblin.audit.auditor</div>
+<div class="subTitle">gobblin.audit.values.auditor</div>
 <h2 title="Class ValueAuditGenerator" class="title">Class ValueAuditGenerator</h2>
 </div>
 <div class="contentContainer">
@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>gobblin.audit.auditor.ValueAuditGenerator</li>
+<li>gobblin.audit.values.auditor.ValueAuditGenerator</li>
 </ul>
 </li>
 </ul>
@@ -117,20 +117,20 @@ var activeTableTab = "activeTableTab";
 extends java.lang.Object
 implements java.io.Closeable</pre>
 <div class="block">The class that implements value based auditing. The class captures the values of certain
- columns from the rows in the dataset using the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><code>ColumnProjectionPolicy</code></a>.
- This is done for every row or for a sample of the rows as defined by the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><code>RowSelectionPolicy</code></a>
+ columns from the rows in the dataset using the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><code>ColumnProjectionPolicy</code></a>.
+ This is done for every row or for a sample of the rows as defined by the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><code>RowSelectionPolicy</code></a>
 
  The class initializes with two arguments
  <ul>
  <li> <code>jobProps</code>
   <ul>
-    <li> <code>jobProps</code> must have the key  set to initialize the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><code>ColumnProjectionPolicy</code></a>
-    <li> <code>jobProps</code> must have the key  set to initialize the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><code>RowSelectionPolicy</code></a>
-    <li> <code>jobProps</code> may have the key  set to initialize the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.sink"><code>AuditSink</code></a>
-        or a default <a href="../../../gobblin/audit/sink/FsAuditSink.html" title="class in gobblin.audit.sink"><code>FsAuditSink</code></a> for local <code>FileSystem</code> is used
+    <li> <code>jobProps</code> must have the key  set to initialize the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><code>ColumnProjectionPolicy</code></a>
+    <li> <code>jobProps</code> must have the key  set to initialize the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><code>RowSelectionPolicy</code></a>
+    <li> <code>jobProps</code> may have the key  set to initialize the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.values.sink"><code>AuditSink</code></a>
+        or a default <a href="../../../gobblin/audit/sink/FsAuditSink.html" title="class in gobblin.audit.values.sink"><code>FsAuditSink</code></a> for local <code>FileSystem</code> is used
  </ul>
  <li> <code>runtimeAuditMetadata</code> is used to pass the table specific runtime information like tablename, databaseName, snapshotName etc.
-      See <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.auditor"><code>ValueAuditRuntimeMetadata</code></a>
+      See <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.values.auditor"><code>ValueAuditRuntimeMetadata</code></a>
  </ul>
 
  <a href="../../../gobblin/audit/auditor/ValueAuditGenerator.html#audit-org.apache.avro.generic.GenericRecord-"><code>audit(GenericRecord)</code></a> is the method that audits an inputRecord.</div>
@@ -152,8 +152,8 @@ implements java.io.Closeable</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../gobblin/audit/auditor/ValueAuditGenerator.html#ValueAuditGenerator-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata-">ValueAuditGenerator</a></span>(java.util.Properties&nbsp;JobProps,
-                   <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata</a>&nbsp;runtimeAuditMetadata)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../gobblin/audit/auditor/ValueAuditGenerator.html#ValueAuditGenerator-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata-">ValueAuditGenerator</a></span>(java.util.Properties&nbsp;JobProps,
+                   <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata</a>&nbsp;runtimeAuditMetadata)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -173,7 +173,7 @@ implements java.io.Closeable</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../gobblin/audit/auditor/ValueAuditGenerator.html#audit-org.apache.avro.generic.GenericRecord-">audit</a></span>(org.apache.avro.generic.GenericRecord&nbsp;inputRecord)</code>
-<div class="block">Write an audit record for the <code>inputRecord</code> to the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.sink"><code>AuditSink</code></a>.</div>
+<div class="block">Write an audit record for the <code>inputRecord</code> to the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.values.sink"><code>AuditSink</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -202,14 +202,14 @@ implements java.io.Closeable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ValueAuditGenerator-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata-">
+<a name="ValueAuditGenerator-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ValueAuditGenerator</h4>
 <pre>public&nbsp;ValueAuditGenerator(java.util.Properties&nbsp;JobProps,
-                           <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata</a>&nbsp;runtimeAuditMetadata)
+                           <a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata</a>&nbsp;runtimeAuditMetadata)
                     throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -233,9 +233,9 @@ implements java.io.Closeable</pre>
 <h4>audit</h4>
 <pre>public&nbsp;void&nbsp;audit(org.apache.avro.generic.GenericRecord&nbsp;inputRecord)
            throws java.io.IOException</pre>
-<div class="block">Write an audit record for the <code>inputRecord</code> to the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.sink"><code>AuditSink</code></a>.
- An audit record is generated for every <code>inputRecord</code> that satisfies the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><code>RowSelectionPolicy</code></a>.
- An audit record is created by projecting  <code>inputRecord</code> using the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><code>ColumnProjectionPolicy</code></a></div>
+<div class="block">Write an audit record for the <code>inputRecord</code> to the <a href="../../../gobblin/audit/sink/AuditSink.html" title="interface in gobblin.audit.values.sink"><code>AuditSink</code></a>.
+ An audit record is generated for every <code>inputRecord</code> that satisfies the <a href="../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><code>RowSelectionPolicy</code></a>.
+ An audit record is created by projecting  <code>inputRecord</code> using the <a href="../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><code>ColumnProjectionPolicy</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>inputRecord</code> - to be audited</dd>
@@ -291,7 +291,7 @@ implements java.io.Closeable</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.auditor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.html" title="class in gobblin.audit.values.auditor"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?gobblin/audit/auditor/ValueAuditGenerator.html" target="_top">Frames</a></li>

@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?gobblin/audit/policy/column/AbstractColumnProjectionPolicy.html" target="_top">Frames</a></li>
@@ -92,7 +92,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">gobblin.audit.policy.column</div>
+<div class="subTitle">gobblin.audit.values.policy.column</div>
 <h2 title="Class AbstractColumnProjectionPolicy" class="title">Class AbstractColumnProjectionPolicy</h2>
 </div>
 <div class="contentContainer">
@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>gobblin.audit.policy.column.AbstractColumnProjectionPolicy</li>
+<li>gobblin.audit.values.policy.column.AbstractColumnProjectionPolicy</li>
 </ul>
 </li>
 </ul>
@@ -109,18 +109,18 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></dd>
+<dd><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../gobblin/audit/policy/column/ProjectAllColumnProjectionPolicy.html" title="class in gobblin.audit.policy.column">ProjectAllColumnProjectionPolicy</a></dd>
+<dd><a href="../../../../gobblin/audit/policy/column/ProjectAllColumnProjectionPolicy.html" title="class in gobblin.audit.values.policy.column">ProjectAllColumnProjectionPolicy</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">AbstractColumnProjectionPolicy</span>
 extends java.lang.Object
-implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></pre>
-<div class="block">A base <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><code>ColumnProjectionPolicy</code></a> that reads <code>jobProps</code> to initialize the key and delta columns to project for a table.
+implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></pre>
+<div class="block">A base <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><code>ColumnProjectionPolicy</code></a> that reads <code>jobProps</code> to initialize the key and delta columns to project for a table.
  <ul>
  <li> The field locations to projects are an ordered string specifying the location of the nested field to retrieve.
  For example, field1.nestedField1 takes the the value of the field "field1" of the record, and retrieves the field "nestedField1" from it
@@ -148,8 +148,8 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/column/AbstractColumnProjectionPolicy.html#AbstractColumnProjectionPolicy-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata.TableMetadata-">AbstractColumnProjectionPolicy</a></span>(java.util.Properties&nbsp;jobProps,
-                              <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/column/AbstractColumnProjectionPolicy.html#AbstractColumnProjectionPolicy-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata.TableMetadata-">AbstractColumnProjectionPolicy</a></span>(java.util.Properties&nbsp;jobProps,
+                              <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -196,7 +196,7 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <li class="blockList"><a name="methods.inherited.from.class.gobblin.audit.policy.column.ColumnProjectionPolicy">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;gobblin.audit.policy.column.<a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></h3>
+<h3>Methods inherited from interface&nbsp;gobblin.audit.values.policy.column.<a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></h3>
 <code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#project-org.apache.avro.generic.GenericRecord-">project</a></code></li>
 </ul>
 </li>
@@ -213,14 +213,14 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractColumnProjectionPolicy-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata.TableMetadata-">
+<a name="AbstractColumnProjectionPolicy-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata.TableMetadata-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractColumnProjectionPolicy</h4>
 <pre>public&nbsp;AbstractColumnProjectionPolicy(java.util.Properties&nbsp;jobProps,
-                                      <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata)</pre>
+                                      <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata)</pre>
 </li>
 </ul>
 </li>
@@ -242,7 +242,7 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <div class="block">A union of <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getKeyColumnsToProject--"><code>ColumnProjectionPolicy.getKeyColumnsToProject()</code></a> and <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getDeltaColumnsToProject--"><code>ColumnProjectionPolicy.getDeltaColumnsToProject()</code></a></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getAllColumnsToProject--">getAllColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></code></dd>
+<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getAllColumnsToProject--">getAllColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -257,7 +257,7 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <div class="block">Get the key aka unique identifier fields to project in a <code>GenericRecord</code></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getKeyColumnsToProject--">getKeyColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></code></dd>
+<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getKeyColumnsToProject--">getKeyColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -272,7 +272,7 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <div class="block">Get the delta fields to project in a <code>GenericRecord</code>. These are the fields used to determine changes over time.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getDeltaColumnsToProject--">getDeltaColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></code></dd>
+<dd><code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html#getDeltaColumnsToProject--">getDeltaColumnsToProject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -305,7 +305,7 @@ implements <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPoli
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?gobblin/audit/policy/column/AbstractColumnProjectionPolicy.html" target="_top">Frames</a></li>

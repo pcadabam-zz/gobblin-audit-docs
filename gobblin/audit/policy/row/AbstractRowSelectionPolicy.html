@@ -44,7 +44,7 @@
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?gobblin/audit/policy/row/AbstractRowSelectionPolicy.html" target="_top">Frames</a></li>
@@ -86,7 +86,7 @@
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">gobblin.audit.policy.row</div>
+<div class="subTitle">gobblin.audit.values.policy.row</div>
 <h2 title="Class AbstractRowSelectionPolicy" class="title">Class AbstractRowSelectionPolicy</h2>
 </div>
 <div class="contentContainer">
@@ -94,7 +94,7 @@
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>gobblin.audit.policy.row.AbstractRowSelectionPolicy</li>
+<li>gobblin.audit.values.policy.row.AbstractRowSelectionPolicy</li>
 </ul>
 </li>
 </ul>
@@ -103,19 +103,19 @@
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row">RowSelectionPolicy</a></dd>
+<dd><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row">RowSelectionPolicy</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../gobblin/audit/policy/row/SelectAllRowSelectionPolicy.html" title="class in gobblin.audit.policy.row">SelectAllRowSelectionPolicy</a></dd>
+<dd><a href="../../../../gobblin/audit/policy/row/SelectAllRowSelectionPolicy.html" title="class in gobblin.audit.values.policy.row">SelectAllRowSelectionPolicy</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">AbstractRowSelectionPolicy</span>
 extends java.lang.Object
-implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row">RowSelectionPolicy</a></pre>
-<div class="block">An abstract <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><code>RowSelectionPolicy</code></a> that contains references to <code>ValueAuditRuntimeMetadata.TableMetadata</code> and
- <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column"><code>ColumnProjectionPolicy</code></a> used by the <a href="../../../../gobblin/audit/auditor/ValueAuditGenerator.html" title="class in gobblin.audit.auditor"><code>ValueAuditGenerator</code></a>.
+implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row">RowSelectionPolicy</a></pre>
+<div class="block">An abstract <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><code>RowSelectionPolicy</code></a> that contains references to <code>ValueAuditRuntimeMetadata.TableMetadata</code> and
+ <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column"><code>ColumnProjectionPolicy</code></a> used by the <a href="../../../../gobblin/audit/auditor/ValueAuditGenerator.html" title="class in gobblin.audit.values.auditor"><code>ValueAuditGenerator</code></a>.
  Concrete classes need to implement <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html#shouldSelectRow-org.apache.avro.generic.GenericRecord-"><code>RowSelectionPolicy.shouldSelectRow(org.apache.avro.generic.GenericRecord)</code></a></div>
 </li>
 </ul>
@@ -136,11 +136,11 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/row/AbstractRowSelectionPolicy.html#columnProjectionPolicy">columnProjectionPolicy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/row/AbstractRowSelectionPolicy.html#tableMetadata">tableMetadata</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -158,9 +158,9 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/row/AbstractRowSelectionPolicy.html#AbstractRowSelectionPolicy-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata.TableMetadata-gobblin.audit.policy.column.ColumnProjectionPolicy-">AbstractRowSelectionPolicy</a></span>(java.util.Properties&nbsp;jobProps,
-                          <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata,
-                          <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a>&nbsp;columnProjectionPolicy)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../gobblin/audit/policy/row/AbstractRowSelectionPolicy.html#AbstractRowSelectionPolicy-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata.TableMetadata-gobblin.audit.values.policy.column.ColumnProjectionPolicy-">AbstractRowSelectionPolicy</a></span>(java.util.Properties&nbsp;jobProps,
+                          <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata,
+                          <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a>&nbsp;columnProjectionPolicy)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -182,7 +182,7 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <li class="blockList"><a name="methods.inherited.from.class.gobblin.audit.policy.row.RowSelectionPolicy">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;gobblin.audit.policy.row.<a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row">RowSelectionPolicy</a></h3>
+<h3>Methods inherited from interface&nbsp;gobblin.audit.values.policy.row.<a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row">RowSelectionPolicy</a></h3>
 <code><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html#shouldSelectRow-org.apache.avro.generic.GenericRecord-">shouldSelectRow</a></code></li>
 </ul>
 </li>
@@ -205,7 +205,7 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <ul class="blockList">
 <li class="blockList">
 <h4>tableMetadata</h4>
-<pre>protected final&nbsp;<a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a> tableMetadata</pre>
+<pre>protected final&nbsp;<a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a> tableMetadata</pre>
 </li>
 </ul>
 <a name="columnProjectionPolicy">
@@ -214,7 +214,7 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>columnProjectionPolicy</h4>
-<pre>protected final&nbsp;<a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a> columnProjectionPolicy</pre>
+<pre>protected final&nbsp;<a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a> columnProjectionPolicy</pre>
 </li>
 </ul>
 </li>
@@ -225,15 +225,15 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractRowSelectionPolicy-java.util.Properties-gobblin.audit.auditor.ValueAuditRuntimeMetadata.TableMetadata-gobblin.audit.policy.column.ColumnProjectionPolicy-">
+<a name="AbstractRowSelectionPolicy-java.util.Properties-gobblin.audit.values.auditor.ValueAuditRuntimeMetadata.TableMetadata-gobblin.audit.values.policy.column.ColumnProjectionPolicy-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractRowSelectionPolicy</h4>
 <pre>public&nbsp;AbstractRowSelectionPolicy(java.util.Properties&nbsp;jobProps,
-                                  <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata,
-                                  <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.policy.column">ColumnProjectionPolicy</a>&nbsp;columnProjectionPolicy)</pre>
+                                  <a href="../../../../gobblin/audit/auditor/ValueAuditRuntimeMetadata.TableMetadata.html" title="class in gobblin.audit.values.auditor">ValueAuditRuntimeMetadata.TableMetadata</a>&nbsp;tableMetadata,
+                                  <a href="../../../../gobblin/audit/policy/column/ColumnProjectionPolicy.html" title="interface in gobblin.audit.values.policy.column">ColumnProjectionPolicy</a>&nbsp;columnProjectionPolicy)</pre>
 </li>
 </ul>
 </li>
@@ -265,7 +265,7 @@ implements <a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.policy.row"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../gobblin/audit/policy/row/RowSelectionPolicy.html" title="interface in gobblin.audit.values.policy.row"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?gobblin/audit/policy/row/AbstractRowSelectionPolicy.html" target="_top">Frames</a></li>
